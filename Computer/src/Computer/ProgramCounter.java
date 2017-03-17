@@ -4,22 +4,22 @@ public class ProgramCounter {
 	int index;
 
 	ProgramCounter(){
-		//index = 0;
+		index = 0;
 	}
 	
-	public void setCounter(int index){
-		
+	public void jumpTo(int index){
+		this.index = index;
 	}
 	
-	public int advance(){
-		
+	public void advance(){
+		index++;
 	}
 	
 	public void finish(){
-		
+		index = -1;
 	}
 	
-	public String getCount(){
-		
+	public int getCount(){
+		return index;
 	}
 }

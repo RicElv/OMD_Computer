@@ -27,7 +27,8 @@ public void execute(ProgramCounter pc, Memory memory){
 
 @Override
 public String toString(){
-	
+	return actionString() + operand1.toString() +" " + operand2.toString() + " "
+			+ " " + address.toString();
 }
 	
 }

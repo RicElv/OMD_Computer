@@ -31,7 +31,13 @@ public class LongWord implements Word{
 
 	@Override
 	public boolean equals(Word word) {
-		return (this.value == (long) word.getValue());
+		return this.value == (long) word.getValue();
+		
+	}
+	
+	@Override
+	public void copy(Word word) {
+		this.value = (long) word.getValue();
 		
 	}
 	

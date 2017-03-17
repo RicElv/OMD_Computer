@@ -7,15 +7,11 @@ public class Halt implements Command{
 
 	
 	public void execute(ProgramCounter pc, Memory memory) {
-	
-		pc.halt();
-
+		pc.finish();
 	}
 	
 	public String toString(){
-		
-		return "HALT";
-		
+		return "HLT";
 	}
 
 }

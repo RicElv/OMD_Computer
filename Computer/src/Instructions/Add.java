@@ -5,7 +5,6 @@ import Computer.Operand;
 import Computer.Word;
 
 public class Add extends Calc{
-	Operand operand1;
 	public Add(Operand operand1, Operand operand2, Address address){
 		super(operand1,operand2,address);
 	}
@@ -18,7 +17,7 @@ public class Add extends Calc{
 
 	@Override
 	public String actionString() {
-		return "ADD [" +  "";
+		return "ADD " ;
 	}
 
 

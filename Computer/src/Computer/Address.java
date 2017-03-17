@@ -1,7 +1,7 @@
 package Computer;
 
 public class Address implements Operand{
- int index;
+ private int index;
  
  public Address(int index){
 	 this.index = index;
@@ -9,10 +9,13 @@ public class Address implements Operand{
 
 @Override
 public Word getWord(Memory memory) {
+	if(memory.getWord(this) == null){
+		memory.newWord(this);
+	}
 	return memory.getWord(this);
 }
 
-public int getValue() {
+public int getIndex() {
 	return index;
 }
 

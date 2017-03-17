@@ -14,14 +14,13 @@ public class JumpEq implements Command{
 		this.operand2 = operand2;
 	}
 	public void execute(ProgramCounter pc, Memory memory){
-
 		if (operand1.getWord(memory).equals(operand2.getWord(memory))) {
-			pc.jumpTo(index - 1);
+			pc.jumpTo(index);
 		}
 	}
 
 	public String toString(){
-		return "JUMPEQ " + String.valueOf(index) + " [" + operand1.toString() + "] "
+		return "JEQ " + index + " " + operand1.toString() + " "
 				+ operand2.toString();
 	}
 
