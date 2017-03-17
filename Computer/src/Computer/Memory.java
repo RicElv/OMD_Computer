@@ -15,7 +15,7 @@ public abstract class Memory {
 	}
 	
 	 public Word newWord(Address address) {
-	       return memory[address.getIndex()] = setWord();
+	     return memory[address.getIndex()] = setWord();
 	}
 	
 }
