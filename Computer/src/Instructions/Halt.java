@@ -3,7 +3,7 @@ package Instructions;
 import Computer.Memory;
 import Computer.ProgramCounter;
 
-public class Halt implements Command{
+public class Halt implements Instruction{
 
 	
 	public void execute(ProgramCounter pc, Memory memory) {

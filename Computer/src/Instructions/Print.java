@@ -4,7 +4,7 @@ import Computer.Memory;
 import Computer.Operand;
 import Computer.ProgramCounter;
 
-public class Print implements Command{
+public class Print implements Instruction{
 	
 	Operand operand;
 	

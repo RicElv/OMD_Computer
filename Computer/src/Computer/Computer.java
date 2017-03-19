@@ -1,7 +1,5 @@
 package Computer;
 
-
-
 public class Computer {
 private Program program;
 private Memory memory;

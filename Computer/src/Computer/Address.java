@@ -9,9 +9,6 @@ public class Address implements Operand{
 
 @Override
 public Word getWord(Memory memory) {
-	if(memory.getWord(this) == null){
-		memory.newWord(this);
-	}
 	return memory.getWord(this);
 }
 

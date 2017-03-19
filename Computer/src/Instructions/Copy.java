@@ -6,21 +6,22 @@ import Computer.Operand;
 import Computer.ProgramCounter;
 import Computer.Word;
 
-public class Copy implements Command{
-	Operand operand1,operand2;
+public class Copy implements Instruction{
+	Operand operand;
 	Address address;
 	
-	public Copy(Operand operand1, Operand operand2){
-		this.operand1 = operand1;
-		this.operand2 = operand2;
+	public Copy(Operand operand, Address address){
+		this.operand = operand;
+		this.address = address;
 	}
 	
 	@Override
 	public void execute(ProgramCounter pc, Memory memory){
-		operand2.getWord(memory).copy(operand1.getWord(memory));
+		Word result = memory.newWord(address);
+		result.copy(operand.getWord(memory));
 	}
 	
 	public String toString(){
-		return "CPY " + operand1.toString() + " " + operand2.toString();
+		return "CPY " + operand.toString() + " " + address.toString();
 	}
 }

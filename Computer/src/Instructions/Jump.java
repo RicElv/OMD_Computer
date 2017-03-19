@@ -3,7 +3,7 @@ package Instructions;
 import Computer.Memory;
 import Computer.ProgramCounter;
 
-public class Jump implements Command{
+public class Jump implements Instruction{
 	private int index;
 	
 	public Jump(int index){

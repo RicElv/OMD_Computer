@@ -4,7 +4,7 @@ import Computer.Memory;
 import Computer.Operand;
 import Computer.ProgramCounter;
 
-public class JumpEq implements Command{
+public class JumpEq implements Instruction{
 	private Operand operand1, operand2;
 	private int index;
 
